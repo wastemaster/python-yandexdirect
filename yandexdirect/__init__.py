@@ -114,6 +114,7 @@ class Client(object):
         return self.call_method("GetSummaryStat", {
             "CampaignIDS": campaign_ids,
             "Currency": "RUB",
+            "IncludeVAT": "No",
             "StartDate": start_date,
             "EndDate": end_date,
         })
