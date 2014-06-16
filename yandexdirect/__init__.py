@@ -110,6 +110,13 @@ class Client(object):
             self.login = old_login
             self.auth_token = old_token
 
+    def GetSummaryStat(self, campaign_ids, start_date, end_date):
+        return self.call_method("GetSummaryStat", {
+            "CampaignIDS": campaign_ids,
+            "StartDate": start_date,
+            "EndDate": end_date,
+        })
+
     def GetBanners(self, campaign_ids, archive=None):
         _filter = {}
         if archive == True:
