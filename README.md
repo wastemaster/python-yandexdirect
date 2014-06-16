@@ -51,4 +51,5 @@
 * GetCampaignsList
 * UpdatePrices
 * SetAutoPrice
+* GetSummaryStat
 
