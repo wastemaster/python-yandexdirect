@@ -113,6 +113,7 @@ class Client(object):
     def GetSummaryStat(self, campaign_ids, start_date, end_date):
         return self.call_method("GetSummaryStat", {
             "CampaignIDS": campaign_ids,
+            "Currency": "RUB",
             "StartDate": start_date,
             "EndDate": end_date,
         })
